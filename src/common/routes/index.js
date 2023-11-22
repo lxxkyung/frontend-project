@@ -1,8 +1,11 @@
 import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-// Main
+// 1. Main
 const Main = lazy(() => import('pages/main/Main'));
+
+// 2. 로그인
+const Login = lazy(() => import('pages/member/Login'));
 
 
 const Router = () => {
@@ -10,6 +13,9 @@ const Router = () => {
         <Routes>
             {/* Main */}
             <Route path="/" element={<Main />} />
+
+            {/* 로그인 */}
+            <Route path="/login" element={<Login />} />
 
         </Routes>
     );
