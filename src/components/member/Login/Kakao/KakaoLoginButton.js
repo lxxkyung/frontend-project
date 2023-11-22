@@ -9,13 +9,6 @@ const KakaoLoginButton = () =>{
         console.log(response)
     }
 
-    // useEffect (() => {
-    //     // Kakao JavaScript SDK 초기화
-    //     if (!window.Kakao.isInitialized()) {
-    //         window.Kakao.init(KAKAO_TOKEN_KEY);
-    //       }
-    // }, [])
-
     return (
      <div>
         <KakaoLogin
